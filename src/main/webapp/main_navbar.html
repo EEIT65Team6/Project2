@@ -1,0 +1,75 @@
+<!-- 導覽列 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed_top zindextop shadow-lg p-3 mb-5" id="nav">
+    <a class="navbar-brand" href="dashboard範例.html"><img src="images/newlogo.png" height="40px" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ">
+            <li class="nav-item active navli ">
+                <a class="nav-link" href="main.html">首頁 </a>
+            </li>
+            <li class="nav-item active navli">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">會員登入 </a>
+            </li>
+            <li class="nav-item active navli">
+                <a class="nav-link" href="#">店家 </a>
+            </li>
+            <li class="nav-item active navli">
+                <a class="nav-link" href="#">遊戲 </a>
+            </li>
+            <li class="nav-item active navli">
+                <a class="nav-link" href="#">周邊商城 </a>
+            </li>
+            <li class="nav-item active navli">
+                <a class="nav-link" href="#">討論區 </a>
+            </li>
+            <li class="nav-item active navli">
+                <a class="nav-link" href="#">客服中心 </a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0 inline_flex">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<!-- 會員登入視窗 -->
+<div class="modal fade " id="loginModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabel">會員登入</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <main class="form-signin w-75 m-auto">
+                <form>
+                    <img class="mb-4" src="images/newlogo.png" alt="" width="72" height="57">
+                    <h1 class="h3 mb-3 fw-normal">請輸入帳號密碼</h1>
+
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">帳號</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">密碼</label>
+                    </div>
+
+                    <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox" value="remember-me"> 記住我
+                        </label>
+                    </div>
+                    <div>
+                        尚未加入會員? <a href="regist.html">註冊!</a>
+                    </div>
+                    <br>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">登入</button>
+                </form>
+            </main>
+
+        </div>
+    </div>
+</div>
